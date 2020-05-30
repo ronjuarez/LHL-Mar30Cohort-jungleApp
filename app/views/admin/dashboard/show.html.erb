@@ -23,7 +23,7 @@
       </tr>
       <tr>
         <td>
-          Categories
+          <%= link_to "Categories", admin_categories_path %>
         </td>
         <td>
         <%= @category_count %>
@@ -35,3 +35,4 @@
 
 <br>
 <a class="btn btn-info" href="/admin/products/new">+ New Product</a>
+<%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
